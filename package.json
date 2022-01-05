@@ -1,25 +1,40 @@
 {
   "name": "mix-eta",
-  "version": "0.2.1",
-  "description": "",
+  "version": "0.2.2",
+  "description": "Laravel Mix extension for Eta template engine",
   "main": "mix-eta.js",
   "scripts": {
-    "build": "tsc src/mix-eta.ts --noEmit && esbuild src/mix-eta.ts --platform=node --outfile=mix-eta.js --target=es2021"
+    "build": "tsc --project tsconfig.json && esbuild src/mix-eta.ts --platform=node --outfile=mix-eta.js --target=nodegi16"
   },
-  "keywords": ["laravel", "webpack", "laravel mix", "ejs", "eta", "template engine", "embedded template engine", "layouts", "partials"],
-  "author": "",
+  "keywords": [
+    "laravel",
+    "webpack",
+    "laravel mix",
+    "ejs",
+    "eta",
+    "template engine",
+    "embedded template engine",
+    "layouts",
+    "partials"
+  ],
+  "author": "onjunPengin",
   "license": "MIT",
   "dependencies": {
     "eta": "^1.12.3",
     "glob-parent": "^6.0.2",
-    "globby": "^11.0.4",
+    "globby": "^12.0.2",
     "html-webpack-plugin": "^5.5.0",
     "laravel-mix": "^6.0.39",
     "upath": "^2.0.1"
   },
   "devDependencies": {
     "@types/glob-parent": "^5.1.1",
-    "esbuild": "^0.14.7",
+    "@types/html-webpack-plugin": "^3.2.6",
+    "@types/webpack": "^5.28.0",
+    "@typescript-eslint/eslint-plugin": "^5.9.0",
+    "@typescript-eslint/parser": "^5.9.0",
+    "esbuild": "^0.14.10",
+    "eslint": "^8.6.0",
     "typescript": "^4.5.4"
   }
 }
