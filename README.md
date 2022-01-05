@@ -1,4 +1,4 @@
-# Mix-Eta
+# Laravel-Mix-Eta
 Laravel Mix extension for [Eta](https://eta.js.org/).
 Eta is very similar to [ejs](https://ejs.co/), but supports templates and has some [differences](https://eta.js.org/docs/about/eta-vs-ejs).
 

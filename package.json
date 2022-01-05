@@ -1,5 +1,5 @@
 {
-  "name": "mix-eta",
+  "name": "laravel-mix-eta",
   "version": "0.2.2",
   "description": "Laravel Mix extension for Eta template engine",
   "main": "mix-eta.js",
