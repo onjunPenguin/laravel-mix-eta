@@ -1,6 +1,6 @@
 import * as mix from 'laravel-mix'
 import * as eta from 'eta'
-import {globbySync} from 'globby'
+import globby from 'globby'
 import globParent from 'glob-parent'
 import * as upath from 'upath'
 
@@ -46,7 +46,7 @@ class mixEtaPlugin {
         let plugins: HtmlWebpackPlugin[] = []
         const srcRoot: string = globParent(this.from)
 
-        for (const srcFile of globbySync(this.from)) {
+        for (const srcFile of globby.sync(this.from)) {
             const srcFileRelative =  upath.relative(srcRoot, srcFile)
             const outputFile = upath.resolve(this.to, upath.changeExt(srcFileRelative, '.html'))
 
