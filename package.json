@@ -1,10 +1,10 @@
 {
   "name": "laravel-mix-eta",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "description": "Laravel Mix extension for Eta template engine",
   "main": "mix-eta.js",
   "scripts": {
-    "build": "tsc --project tsconfig.json && esbuild src/mix-eta.ts --format=cjs --platform=node --outfile=mix-eta.js --target=node16"
+    "build": "tsc --project tsconfig.json && esbuild src/mix-eta.ts --format=cjs --platform=node --target=node16 --outfile=mix-eta.js"
   },
   "keywords": [
     "laravel",
