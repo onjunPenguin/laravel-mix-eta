@@ -7,7 +7,7 @@
     "build": "tsc --project tsconfig.json && esbuild src/mix-eta.ts --format=cjs --platform=node --target=node16 --outfile=mix-eta.js",
     "test": "mix"
   },
-  "repository": "onjunPenguin/laravel-mix-eta",
+  "repository": "https://github.com/onjunPenguin/laravel-mix-eta",
   "bugs": {
     "url": "https://github.com/onjunPenguin/laravel-mix-eta/issues"
   },
@@ -42,5 +42,8 @@
     "esbuild": "^0.14.10",
     "eslint": "^8.6.0",
     "typescript": "^4.5.4"
+  },
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com"
   }
 }
