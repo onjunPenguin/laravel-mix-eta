@@ -4,8 +4,14 @@
   "description": "Laravel Mix extension for Eta template engine",
   "main": "mix-eta.js",
   "scripts": {
-    "build": "tsc --project tsconfig.json && esbuild src/mix-eta.ts --format=cjs --platform=node --target=node16 --outfile=mix-eta.js"
+    "build": "tsc --project tsconfig.json && esbuild src/mix-eta.ts --format=cjs --platform=node --target=node16 --outfile=mix-eta.js",
+    "test": "mix"
   },
+  "repository": "onjunPenguin/laravel-mix-eta",
+  "bugs": {
+    "url": "https://github.com/onjunPenguin/laravel-mix-eta/issues"
+  },
+  "homepage": "https://github.com/onjunPenguin/laravel-mix-eta#readme",
   "keywords": [
     "laravel",
     "webpack",

@@ -12,12 +12,20 @@ npm i -D mix-eta
 Use `mix.eta()` with your `webpack.mix.js`. You can also add object data.
 
 ```
-require('mix-eta');
+require('laravel-mix-eta');
+
+mix.eta('src/**/[^_]*.eta', 'dest/');
+// mix.eta(GlobPattern, DestDir, Object?)
+```
+or
+
+```
+require('laravel-mix-eta');
 
 const fs = require('fs');
 const data = JSON.parse(fs.readFileSync('./data.json', 'utf8'));
 
-mix.eta('src/**/[^_]*.eta', 'dest/', data /* Option */);
+mix.eta('src/**/[^_]*.eta', 'dest/', data);
 // mix.eta(GlobPattern, DestDir, Object?)
 ```
 
